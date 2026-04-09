@@ -10,7 +10,8 @@ from sklearn.linear_model import LogisticRegression
 # -----------------------
 
 # Load training data
-train = pd.read_csv("train.csv")
+train_url = "https://raw.githubusercontent.com/Dan13lMurphy/Titanic-Machine-Learning-Project/refs/heads/main/titanic-ml-project/train.csv"
+train = pd.read_csv(train_url)
 
 # Data cleaning
 train['Age'] = train['Age'].fillna(train['Age'].median())

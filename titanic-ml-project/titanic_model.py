@@ -9,7 +9,8 @@ from sklearn.model_selection import cross_val_score
 # ----------------------
 # 1. Load Data
 # ----------------------
-train = pd.read_csv("train.csv")
+train_url = "https://raw.githubusercontent.com/Dan13lMurphy/Titanic-Machine-Learning-Project/refs/heads/main/titanic-ml-project/train.csv"
+train = pd.read_csv(train_url)
 test = pd.read_csv("test.csv")
 
 # ----------------------
